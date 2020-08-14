@@ -4,6 +4,7 @@ const client = new OSS({
   accessKeyId: process.env.ALI_ACCESS_KEY_ID,
   accessKeySecret: process.env.ALI_ACCESS_KEY_SECRET,
   bucket: 'zjh-im-res',
+  secure: true
 });
 
 const { cors } = require('./utils.js');
