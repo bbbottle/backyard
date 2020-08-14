@@ -1,26 +1,17 @@
-const aws = require('aws-sdk');
 const multer = require('multer');
-const multerS3 = require('multer-s3');
 
-const spacesEndpoint = new aws.Endpoint('sgp1.digitaloceanspaces.com');
-const s3 = new aws.S3({
-  endpoint: spacesEndpoint,
-  credentials: {
-    accessKeyId: process.env.AWS_KEY,
-    secretAccessKey: process.env.AWS_SECRET,
-  }
-});
+const aliOssStorage = require('multer-ali-oss');
 
-const upload = multer({
-  storage: multerS3({
-    s3: s3,
-    bucket: 'images-repo',
-    acl: 'public-read',
-    contentType: function (req, file, cb) {
-      cb(null, req.body.type || undefined);
+const upload = multer( {
+  storage: aliOssStorage({
+    config: {
+      region: 'oss-cn-shenzhen',
+      accessKeyId: process.env.ALI_ACCESS_KEY_ID,
+      accessKeySecret: process.env.ALI_ACCESS_KEY_SECRET,
+      bucket: 'zjh-im-res',
     },
-    key: function (req, file, cb) {
-      cb(null, `${req.body.id}` || file.originalname);
+    filename: function (req, file, cb) {
+      cb(null, `/image/${req.body.id}` || file.originalname);
     }
   })
 }).single('file');
