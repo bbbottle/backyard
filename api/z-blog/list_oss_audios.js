@@ -1,3 +1,3 @@
 const buildHandler = require('./get_oss_file_handler');
 
-module.exports = buildHandler('image/');
+module.exports = buildHandler('audio/');

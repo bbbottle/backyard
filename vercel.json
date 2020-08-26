@@ -18,6 +18,10 @@
       "dest": "/api/z-blog/list_oss_images.js"
     },
     {
+      "src": "/audios",
+      "dest": "/api/z-blog/list_oss_audios.js"
+    },
+    {
       "src": "/upload",
       "methods": ["POST", "OPTIONS"],
       "dest": "/api/upload.js"
