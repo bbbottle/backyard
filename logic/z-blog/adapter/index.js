@@ -1,3 +1,4 @@
+const CONFIG = require("../config");
 const { Post } = require('../model/');
 
 const stitchSDKAdapter = (stitchSDK) => {
@@ -8,6 +9,12 @@ const stitchSDKAdapter = (stitchSDK) => {
       postsCollectionName
     );
     return posts.map(p => new Post(p));
+  };
+
+  const fetchVoice = async () => {
+    return stitchSDK.read(
+      CONFIG.collections.voice
+    );
   };
 
   const methodAdapter = (sdkMethod) => {
@@ -38,7 +45,9 @@ const stitchSDKAdapter = (stitchSDK) => {
     fetchPosts,
     createPost,
     updatePost,
-    deletePost
+    deletePost,
+
+    fetchVoice
   }
 };
 

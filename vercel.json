@@ -14,6 +14,10 @@
       "dest": "/api/z-blog/index.js"
     },
     {
+      "src": "/z/voice",
+      "dest": "/api/z-blog/voice.js"
+    },
+    {
       "src": "/res",
       "dest": "/api/z-blog/list_oss_images.js"
     },
