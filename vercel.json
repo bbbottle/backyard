@@ -18,6 +18,10 @@
       "dest": "/api/z-blog/voice.js"
     },
     {
+      "src": "auth/editor",
+      "dest": "/api/yuque_auth.js"
+    },
+    {
       "src": "/res",
       "dest": "/api/z-blog/list_oss_images.js"
     },
