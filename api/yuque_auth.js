@@ -31,6 +31,7 @@ const getAccessToken = async (code) => {
       grant_type: YuQueConfig.grantType
     })
 
+  console.log(tokenInfo);
   return tokenInfo.access_token;
 }
 
@@ -51,6 +52,7 @@ const getUserInfo = (token) => {
 module.exports = async (req, res) => {
   const code = req.query.code;
   const accessToken = await getAccessToken(code);
+  console.log(code, accessToken);
   const userInfo = await getUserInfo(accessToken);
   console.log(userInfo);
   res.setHeader('Content-Type', 'text/html');
