@@ -11,7 +11,7 @@ const successHtmlWithMsg = (msg) => `
  </html>
 `
 module.exports = (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/html'});
-  console.log(req.query);
-  res.send(successHtmlWithMsg(req.query.code));
+  res.setHeader('Content-Type', 'text/html');
+  res.write(successHtmlWithMsg(req.query.code));
+  res.end(200);
 }
