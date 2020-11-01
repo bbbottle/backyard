@@ -18,7 +18,7 @@
       "dest": "/api/z-blog/voice.js"
     },
     {
-      "src": "auth/editor",
+      "src": "/auth/editor",
       "dest": "/api/yuque_auth.js"
     },
     {
