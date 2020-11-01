@@ -19,7 +19,7 @@ const YuQueConfig = {
   clientID: 'ab7VkEGAfseQU3ecnLNq',
   clientSecret: 'svLZYV7j0kZ1I9sCEWCXcSBS5Y8TUvHPYo5M2FcR',
   grantType: 'authorization_code',
-  uid: ''
+  accountId: '42567'
 }
 
 const getAccessToken = async (code) => {
@@ -47,12 +47,25 @@ const getUserInfo = async (token) => {
   return res.data;
 }
 
+const login = async (token) => {
+  const loginResult = {
+    token,
+  };
+  const { data: userInfo } = await getUserInfo(token);
+  if (userInfo.account_id === YuQueConfig.accountId) {
+    loginResult.login = true;
+    loginResult.user = userInfo;
+  } else {
+    loginResult.login = false;
+  }
+  return JSON.stringify(loginResult);
+}
+
 module.exports = async (req, res) => {
   const code = req.query.code;
   const accessToken = await getAccessToken(code);
-  const userInfo = await getUserInfo(accessToken);
-  console.log(userInfo);
+  const loginResult = await login(accessToken);
   res.setHeader('Content-Type', 'text/html');
-  res.write(successHtmlWithMsg(accessToken));
+  res.write(successHtmlWithMsg(loginResult));
   res.end();
 }
