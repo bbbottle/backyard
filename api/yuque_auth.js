@@ -6,6 +6,7 @@ const successHtmlWithMsg = (msg) => `
         if (window.opener) {
            // send them to the opening window
            window.opener.postMessage('${msg}');
+           window.postMessage('${msg}', 'http://localhost:8080');
            // close the popup
            window.close();
         }
