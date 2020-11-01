@@ -19,7 +19,7 @@ const YuQueConfig = {
   clientID: 'ab7VkEGAfseQU3ecnLNq',
   clientSecret: 'svLZYV7j0kZ1I9sCEWCXcSBS5Y8TUvHPYo5M2FcR',
   grantType: 'authorization_code',
-  accountId: '42567'
+  uid: '149258'
 }
 
 const getAccessToken = async (code) => {
@@ -52,7 +52,8 @@ const login = async (token) => {
     token,
   };
   const { data: userInfo } = await getUserInfo(token);
-  if (userInfo.account_id === YuQueConfig.accountId) {
+  console.log(userInfo.id, YuQueConfig.uid);
+  if (userInfo.id === YuQueConfig.uid) {
     loginResult.login = true;
     loginResult.user = userInfo;
   } else {
