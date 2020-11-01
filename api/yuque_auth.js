@@ -23,7 +23,7 @@ const YuQueConfig = {
 }
 
 const getAccessToken = async (code) => {
-  const tokenInfo = await axios
+  const res = await axios
     .post(YuQueConfig.tokenURL, {
       client_id: YuQueConfig.clientID,
       client_secret: YuQueConfig.clientSecret,
@@ -31,28 +31,28 @@ const getAccessToken = async (code) => {
       grant_type: YuQueConfig.grantType
     })
 
-  console.log(tokenInfo);
-  return tokenInfo.access_token;
+  return res.data.access_token;
 }
 
-const getUserInfo = (token) => {
+const getUserInfo = async (token) => {
   const config = {
     headers: { 'X-Auth-Token': token }
   };
 
   const bodyParameters = {};
 
-  return axios.post(
+  const res = await axios.post(
     YuQueConfig.userInfoURL,
     bodyParameters,
     config
   );
+
+  return res.data;
 }
 
 module.exports = async (req, res) => {
   const code = req.query.code;
   const accessToken = await getAccessToken(code);
-  console.log(code, accessToken);
   const userInfo = await getUserInfo(accessToken);
   console.log(userInfo);
   res.setHeader('Content-Type', 'text/html');
