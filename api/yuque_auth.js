@@ -54,7 +54,7 @@ const login = async (token) => {
   const { data: userInfo } = await getUserInfo(token);
   if (userInfo.id === YuQueConfig.uid) {
     loginResult.login = true;
-    loginResult.user = userInfo;
+    loginResult.secret = 'nshzpldjbm_L';
   } else {
     loginResult.login = false;
   }
