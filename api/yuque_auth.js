@@ -39,11 +39,8 @@ const getUserInfo = async (token) => {
     headers: { 'X-Auth-Token': token }
   };
 
-  const bodyParameters = {};
-
-  const res = await axios.post(
+  const res = await axios.get(
     YuQueConfig.userInfoURL,
-    bodyParameters,
     config
   );
 
