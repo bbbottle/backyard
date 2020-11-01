@@ -11,6 +11,7 @@
   "dependencies": {
     "ali-oss": "^6.10.0",
     "aws-sdk": "^2.595.0",
+    "axios": "^0.21.0",
     "micro-cors": "^0.1.1",
     "mongodb": "^3.4.0",
     "mongodb-stitch-server-sdk": "^4.7.1",
