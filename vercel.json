@@ -8,7 +8,6 @@
     }
   ],
   "routes": [
-    {"src": "/", "dest": "/api/index.js"},
     {
       "src": "/z/posts",
       "dest": "/api/z-blog/index.js"

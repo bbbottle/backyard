@@ -2,7 +2,7 @@ const {
   fetchVoice
 } = require('../../logic/z-blog/');
 
-const { cors } = require('./utils.js');
+const { cors } = require('../../utils/');
 
 module.exports = cors(async (req, res) => {
   const voice = await fetchVoice();

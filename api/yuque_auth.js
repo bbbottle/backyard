@@ -54,7 +54,7 @@ const login = async (token) => {
   const { data: userInfo } = await getUserInfo(token);
   if (userInfo.id === YuQueConfig.uid) {
     loginResult.login = true;
-    loginResult.secret = 'nshzpldjbm_L';
+    loginResult.secret = process.env.ATLAS_SECRET;
   } else {
     loginResult.login = false;
   }

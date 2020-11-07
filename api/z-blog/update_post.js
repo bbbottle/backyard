@@ -2,7 +2,7 @@ const {
   updatePost
 } = require('../../logic/z-blog/');
 
-const { cors, objectCompact } = require('./utils.js');
+const { cors, objectCompact } = require('../../utils/');
 
 module.exports = cors(async (req, res) => {
   const {

@@ -16,7 +16,7 @@ const upload = multer( {
   })
 }).single('file');
 
-const { cors } = require('./z-blog/utils.js');
+const { cors } = require('../utils/');
 
 const handler = (req, res) => {
   upload(req, res, (err, ...rest) => {

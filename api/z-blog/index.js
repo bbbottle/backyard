@@ -3,7 +3,7 @@ const {
 } = require('../../logic/z-blog/');
 const fetchYuQueDocs = require('./list_yuque_docs');
 
-const { cors } = require('./utils.js');
+const { cors } = require('../../utils/');
 
 module.exports = cors(async (req, res) => {
   const yuQueToken = req.query.token;
