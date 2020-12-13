@@ -13,6 +13,10 @@
       "dest": "/api/z-blog/index.js"
     },
     {
+      "src": "/articles",
+      "dest": "/api/z-blog/list_yuque_docs.js"
+    },
+    {
       "src": "/z/voice",
       "dest": "/api/z-blog/voice.js"
     },
