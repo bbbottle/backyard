@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "api-grocery",
   "builds": [
     {
       "src": "api/**/*.js",
@@ -10,36 +9,19 @@
   "routes": [
     {
       "src": "/articles",
-      "dest": "/api/z-blog/list_yuque_docs.js"
-    },
-    {
-      "src": "/latest_articles",
-      "dest": "/api/z-blog/list_yuque_articles.js"
-    },
-    {
-      "src": "/article",
-      "dest": "/api/z-blog/list_yuque_doc.js"
-    },
-    {
-      "src": "/z/voice",
-      "dest": "/api/z-blog/voice.js"
-    },
-    {
-      "src": "/auth/editor",
-      "dest": "/api/yuque_auth.js"
+      "dest": "/api/list_yuque_docs.js"
     },
     {
       "src": "/res",
-      "dest": "/api/z-blog/list_oss_images.js"
+      "dest": "/api/list_oss_images.js"
     },
     {
-      "src": "/audios",
-      "dest": "/api/z-blog/list_oss_audios.js"
+      "src": "/blog/latest_articles",
+      "dest": "/api/latest_articles.js"
     },
     {
-      "src": "/upload",
-      "methods": ["POST", "OPTIONS"],
-      "dest": "/api/upload.js"
+      "src": "/blog/article",
+      "dest": "/api/article.js"
     }
   ]
 }

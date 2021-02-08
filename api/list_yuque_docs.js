@@ -1,4 +1,4 @@
-const { cors } = require('../../utils/');
+const { cors } = require('../utils');
 
 const fetchYuQueDocs = async (req, res) => {
   const SDK = require('@yuque/sdk');
@@ -8,7 +8,7 @@ const fetchYuQueDocs = async (req, res) => {
   res.json(articlesInDetail.map(a => ({
     title: a.title,
     content: a.body_html,
-  })));
+  }))).end(200);
 };
 
 module.exports = cors(fetchYuQueDocs);

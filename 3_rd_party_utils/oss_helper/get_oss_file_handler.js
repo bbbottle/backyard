@@ -7,7 +7,7 @@ const client = new OSS({
   secure: true
 });
 
-const { cors } = require('../../utils/');
+const { cors } = require('../../utils');
 
 module.exports = (dir) => cors(async (req, res) => {
   client.list({
