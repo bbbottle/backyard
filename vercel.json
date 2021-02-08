@@ -13,7 +13,7 @@
       "dest": "/api/z-blog/list_yuque_docs.js"
     },
     {
-      "src": "/latestArticles",
+      "src": "/latest_articles",
       "dest": "/api/z-blog/list_yuque_articles.js"
     },
     {
