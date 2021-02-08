@@ -9,12 +9,16 @@
   ],
   "routes": [
     {
-      "src": "/z/posts",
-      "dest": "/api/z-blog/index.js"
-    },
-    {
       "src": "/articles",
       "dest": "/api/z-blog/list_yuque_docs.js"
+    },
+    {
+      "src": "/latestArticles",
+      "dest": "/api/z-blog/list_yuque_articles.js"
+    },
+    {
+      "src": "/article",
+      "dest": "/api/z-blog/list_yuque_doc.js"
     },
     {
       "src": "/z/voice",
