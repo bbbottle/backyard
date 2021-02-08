@@ -40,21 +40,6 @@
       "src": "/upload",
       "methods": ["POST", "OPTIONS"],
       "dest": "/api/upload.js"
-    },
-    {
-      "src": "/z/post/update",
-      "methods": ["POST", "OPTIONS"],
-      "dest": "/api/z-blog/update_post.js"
-    },
-    {
-      "src": "/z/post/delete",
-      "methods": ["POST", "OPTIONS"],
-      "dest": "/api/z-blog/delete_post.js"
-    },
-    {
-      "src": "/z/post/create",
-      "methods": ["POST", "OPTIONS"],
-      "dest": "/api/z-blog/create_post.js"
     }
   ]
 }
