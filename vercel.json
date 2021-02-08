@@ -15,6 +15,7 @@
       "src": "/res",
       "dest": "/api/list_oss_images.js"
     },
+
     {
       "src": "/blog/latest_articles",
       "dest": "/api/latest_articles.js"
@@ -22,6 +23,10 @@
     {
       "src": "/blog/article",
       "dest": "/api/article.js"
+    },
+    {
+      "src": "/gallery/photos",
+      "dest": "/api/photos.js"
     }
   ]
 }
