@@ -17,8 +17,8 @@
     },
 
     {
-      "src": "/blog/latest_articles",
-      "dest": "/api/latest_articles.js"
+      "src": "/blog/articles",
+      "dest": "/api/articles.js"
     },
     {
       "src": "/blog/article",
