@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@octokit/rest": "^18.5.2",
     "@yuque/sdk": "^1.1.1",
     "ali-oss": "^6.10.0",
     "aws-sdk": "^2.595.0",

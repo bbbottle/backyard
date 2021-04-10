@@ -15,7 +15,10 @@
       "src": "/res",
       "dest": "/api/list_oss_images.js"
     },
-
+    {
+      "src": "/store_version",
+      "dest": "/api/store_version.js"
+    },
     {
       "src": "/blog/articles",
       "dest": "/api/articles.js"
