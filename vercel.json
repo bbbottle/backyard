@@ -20,6 +20,14 @@
       "dest": "/api/store_version.js"
     },
     {
+      "src": "/store/version",
+      "dest": "/api/store_version.js"
+    },
+    {
+      "src": "/store/apps",
+      "dest": "/api/apps_meta.js"
+    },
+    {
       "src": "/blog/articles",
       "dest": "/api/articles.js"
     },
