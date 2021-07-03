@@ -7,10 +7,10 @@ const { cors } = require("../../utils");
 
 module.exports = (repoPath, options) =>
   cors(async (req, res) => {
-    const { owner, repo } = options;
+    const { owner, repo, formatter = (n) => n } = options;
     const release = await octokit.request(
       `GET /repos/${repoPath}/releases/latest`,
       { owner, repo }
     );
-    res.json(release);
+    res.json(formatter(release));
   });
