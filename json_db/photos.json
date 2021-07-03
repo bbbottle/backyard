@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "异乡人",
+    "name": "异乡",
     "photos": [
       {
         "name": "image/14E631AB-C927-4109-BEAF-187F4E374D25-5E21A408-681A-4D04-9125-15CCA97C5108.JPG",
@@ -71,12 +71,7 @@
         "name": "image/5e10850077ea51be4a387f79-Snapseed.jpg",
         "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/5e10850077ea51be4a387f79-Snapseed.jpg",
         "description": "修扶梯"
-      }
-    ]
-  },
-  {
-    "name": "异乡",
-    "photos": [
+      },
       {
         "name": "image/2016-11-26 03.49.59 1-01.jpeg",
         "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/2016-11-26%2003.49.59%201-01.jpeg",
@@ -114,6 +109,46 @@
       }
     ]
   },
+  {
+    "name": "光前纪实",
+    "photos": [
+      {
+        "name": "image/before-the-light/IMG_E1614.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1614.JPG",
+        "description": "iPad"
+      },
+      {
+        "name": "image/before-the-light/IMG_E1635.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1635.JPG",
+        "description": "水产店"
+      },
+      {
+        "name": "image/before-the-light/IMG_E1668.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1668.JPG",
+        "description": "祠堂"
+      },
+      {
+        "name": "image/before-the-light/IMG_E1677.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1677.JPG",
+        "description": "小孩"
+      },
+      {
+        "name": "image/before-the-light/IMG_E1679.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1679.JPG",
+        "description": "鞋子"
+      },
+      {
+        "name": "image/before-the-light/IMG_E1751.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/IMG_E1751.JPG",
+        "description": "清节工人"
+      },
+      {
+        "name": "image/before-the-light/LFKW1496.JPG",
+        "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/image/before-the-light/LFKW1496.JPG",
+        "description": "窗外"
+      }
+    ]
+  }
   {
     "name": "其他",
     "photos": [
